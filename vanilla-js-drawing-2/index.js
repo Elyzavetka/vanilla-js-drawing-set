@@ -5,9 +5,9 @@ context.fillStyle = '#a3d7f0';
 context.beginPath();
 context.fillRect(100, 100, 500, 500);
 
-let width = 82.5;
-let height = 82.5;
-let gap = 21;
+const width = 82.5;
+const height = 82.5;
+const gap = 21;
 
 context.lineWidth = 4;
 

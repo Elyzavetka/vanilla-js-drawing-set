@@ -8,13 +8,14 @@ context.fillRect(100, 100, 500, 500);
 const width = 82.5;
 const height = 82.5;
 const gap = 21;
+let x, y;
 
 context.lineWidth = 4;
 
 for (let i = 0; i < 5; i++) {
     for (let j = 0; j < 5; j++) {
-        let x = 100 + (width + gap) * i;
-        let y = 100 + (width + gap) * j;
+        x = 100 + (width + gap) * i;
+        y = 100 + (width + gap) * j;
 
         // Outer square with thickness 4
         context.lineWidth = 4;
@@ -28,8 +29,8 @@ for (let i = 0; i < 5; i++) {
 for (let i = 0; i < 5; i++) {
     for (let j = 0; j < 5; j++) {
         if (Math.random() > 0.5) {
-            let x = 100 + (width + gap) * i;
-            let y = 100 + (width + gap) * j;
+            x = 100 + (width + gap) * i;
+            y = 100 + (width + gap) * j;
 
             // Inner square with thickness 2
             context.lineWidth = 2;
